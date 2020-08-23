@@ -1,0 +1,78 @@
+<html >
+    <head>
+        <title>
+            Survey Form
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    </head>
+<body>
+
+<main id="main">
+    <div class="title">
+    <h1 id = "title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+      </div>
+     
+    <form id="survey-form" action="#">
+      <fieldset>
+     <div id="div-name"> <label for="name" id="name-label">Name<br>
+        <input id="name" type = "text"  placeholder="Enter your name" required>
+      </label>
+    </div>
+    <div id="div-email">
+      <label for="email" id="email-label">Email<br>
+        <input id="email" type = "email" placeholder="abc@mail.com" required>
+      </label>
+    </div>
+    <div id="div-number">
+      <label for="number" id="number-label">Age(optional)<br>
+        <input id="number" type="number" 
+               min="20" max="96"          placeholder="0">
+    </label>
+    </div>
+    <div id="div-dropdown">
+      <p id="p-role">
+        Which best describe your current role?</p><br>
+        <select id="dropdown" name="role" required>
+          <option disabled selected value="none">Select your role</option>
+          <option value="employee">Employee</option>
+          <option value="learner">Learner</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select>
+    </div>
+    <div id="div-recom">
+      <p id="p-recom">Would you freeCodeCamp to your friends?</p>
+      <label for="definately" >
+        <input type="radio" id="definately" name="recom" value="definately" checked>Definately</label><br>
+      <label for="may-be" >
+        <input type="radio" name="recom" value="may be" id="may-be">Maybe</label><br>
+      <label for="not-sure" >
+        <input type="radio" name="recom" value="not sure" id="not-sure">Not sure</label><br>
+    </div>
+    <div id=div-check>
+      <p id="p-check">What do like in freeCodeCamp?</p>
+      <label for="ui">
+        <input type="checkbox" id="ui" name="check" value="1">User Interface
+      </label><br>
+      <label for="content">
+        <input type="checkbox" id="ui" name="check" value="2">Content
+      </label><br>
+      <label for="community-support">
+        <input type="checkbox" id="ui" name="check" value="3">Community Support
+      </label>
+    </div>
+    <div id="div-textarea">
+      <p id="p-textarea">Any Comment or Suggestion:</p>
+      <textarea id="textarea" name="text" placeholder="Enter your text.">
+        </textarea>
+
+      <button id="submit" type="submit">Submit</button>
+      </fieldset>
+    </form>
+    </div>
+    </main>
+          
+</body>
+</html>  

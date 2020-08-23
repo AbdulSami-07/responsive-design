@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:whitesmoke;
+    font-family: 'Oxygen','Lora',sans-serif;
+    color:black ;
+}
+
+
+#navbar>header{
+    font-size:2.5rem;
+    font-weight: 500; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align:center;
+}
+
+#nav-ul li {
+    list-style: none;
+    display: block ;
+    width:100%;
+    border-bottom: 1px solid black;
+}
+
+#nav-ul li:last-child{
+    border:none;
+}
+
+#nav-ul li a{
+    color:black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.main-section p , .main-section li{
+    margin-top:  20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.main-section header{
+    font-size:2.5rem;
+    font-weight: 400;
+    margin-bottom: -15px;
+}
+
+code{
+    display:block;
+    background-color: #f0f0f5;
+    border:1px dashed #c2c2d6;
+    text-align: justify;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 20px;
+}
+
+#reference a:hover ,a:visited{
+    text-align: none;
+}
+
+#reference a:visited{
+    color: darkviolet;
+}
+
+
+@media (max-width:767px){
+   #nav-div{
+       height:250px;
+       overflow: scroll;
+       border: 1px solid black;
+       border-bottom: 3px solid black;
+   }
+   #introduction{
+       margin-top: 20px;
+   }
+}
+
+
+@media (min-width:768px){
+    #navbar{
+        height:100vh;
+        position: sticky;
+        top:0px;
+      
+    }
+    #nav-ul{
+        display: block;
+        height:100vh;
+        overflow-y: scroll;
+    }
+    .main-section:first-child{
+        margin-top: 20px;
+    }
+    
+}
+
+@media (min-width:769px) and (max-width:930px){
+   #navbar>header{
+    font-size:2.0rem;
+    font-weight: 900;
+   }
+}
+
+@media (min-width:300px) and (max-width:575px){
+    #navbar>header{
+        font-size: 20px;
+        font-weight: 800;
+    }
+    #nav-ul li , .main-section p , .main-section li, code {
+        font-size: 14px;
+    }
+    .main-section header {
+        font-size : 16px;
+        font-weight: 800;
+    }
+    #nav-ul li a{
+        font-size : 16px;
+    }
+
+}
+
+@media (min-width:210px) and (max-width:299px){
+    #navbar>header{
+        font-size: 14px;
+        font-weight: 800;
+    }
+
+    #nav-ul li , .main-section p , .main-section li,code{
+        font-size: 10px;
+        font-weight: 500;
+    }
+    .main-section header {
+        font-size : 12px;
+        font-weight: 600;
+    }
+    #nav-ul li a{
+        font-size : 10px;
+        font-weight: 500 ;
+    }
+}
+
+@media (max-width:209px){
+    #navbar>header{
+        font-size: 10px;
+        font-weight:200;
+    }
+
+    #nav-ul li , .main-section p , .main-section li,code{
+        font-size: 8px;
+        font-weight: 400;
+    }
+    .main-section header {
+        font-size : 10px;
+        font-weight: 400;
+    }
+    #nav-ul li a{
+        font-size : 8px;
+        font-weight: 400 ;
+    }
+    .main-section li{
+        margin-left: -30%;
+    }
+}
